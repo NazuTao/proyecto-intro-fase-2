@@ -16,7 +16,7 @@ body {
 }
 .letrasmain {
     font-family: sans-serif;
-    color: gray;
+    color: white;
     text-shadow: 4px;
 }
 .letrasmain span {
@@ -290,4 +290,9 @@ button.eliminar {
 
 button.eliminar:hover {
     background-color: #e60000;
+}
+.mensaje-vacio {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
 }
