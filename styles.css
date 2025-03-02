@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 body {
-    background-image: url(/sources/background.jpg);
+    background-image: url(sources/background.jpg);
     background-repeat: no-repeat;
     background-size: 300vh;
     text-align: center;
