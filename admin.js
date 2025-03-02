@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const mensaje = document.createElement('p');
                 mensaje.textContent = 'No hay usuarios existentes.';
                 mensaje.id = 'mensaje-usuarios';
+                mensaje.classList.add('mensaje-vacio')
                 tablaUsuarios.parentNode.appendChild(mensaje);
             }
         }
