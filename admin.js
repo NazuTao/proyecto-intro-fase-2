@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tablaUsuarios = document.querySelector('.tabla-usuarios tbody');
+    const logoutButton = document.getElementById('logout');
 
     const usuariosLocalStorage = JSON.parse(localStorage.getItem('users')) || [];
 
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         tablaUsuarios.appendChild(fila);
     });
-
     tablaUsuarios.addEventListener('click', (e) => {
         if (e.target.classList.contains('eliminar')) {
             const fila = e.target.closest('tr');
