@@ -16,8 +16,8 @@ body {
 }
 .letrasmain {
     font-family: sans-serif;
-    color: white;
-    text-shadow: 3px;
+    color: gray;
+    text-shadow: 4px;
 }
 .letrasmain span {
     background-color: black;
