@@ -1,0 +1,293 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-image: url(/sources/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 300vh;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: 3vh;
+}
+.letrasmain {
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 3px;
+}
+.letrasmain span {
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px 1vh;
+}
+.home-span{
+    background: rgb(141, 25, 122);
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: black 2px 2px;
+}
+.home-span2{
+    background: rgb(141, 25, 122);
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: black 2px 2px;
+}
+.home-span3{
+    background: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: black 2px 2px;
+}
+h1 {
+    margin: 2vh;
+}
+h2 {
+    font-size: 3vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+p1 {
+    color: white;
+    display: block;
+    margin: 1vh;
+    
+}
+.buttonmain{
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 5px;
+    height: 5vh;
+    border: 3px solid black;
+    width: 15vh;;
+}
+.buttonmain:hover {
+    background-color: black;
+    transform: background-color;
+}
+.buttonadmin{
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(48, 38, 196);
+    display: inline-block;
+    border-radius: 5px;
+    height: 5vh;
+    border: 3px solid black;
+    width: 15vh;
+}
+.buttonadmin:hover {
+    background-color: black;
+    transform: background-color;
+}
+header nav {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-buttons{
+    display: flex;
+    gap: 10px;
+    display: flex-end;
+}
+header {
+    background-color: #a419ce;
+    padding: 15px;
+    border-radius: 1vh;
+    box-shadow: black 2px 2px 2px;
+}
+.homeicon {
+    border-radius: 1vh;
+    transition: transform 0.2s, background-color 0.2s;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.homeicon:hover{
+    transform: scale(1.1);
+}
+.formulario-login{
+    width: auto;
+    max-width: 400px;
+    background: white;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 1vh;
+}
+.formulario-login input {
+    width: auto;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    border: 1px solid purple;    
+    display: block;
+}
+.formulario-registro {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 8vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 1vh;
+}
+.formulario-registro input {
+    width: auto;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid purple;
+    border-radius: 4px;
+}
+.formulario-registro button {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: lightgreen;
+}
+.formulario-login input[type=submit] {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: lightgreen;
+    border: 1px solid black;
+    
+}
+.formulario-registro input[type=button] {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: lightgreen;
+}
+.formulario-registro input[type=submit] {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: lightgreen;
+}
+.formulario-registro div {
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+}
+.container-reg {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.formulario-productos{
+    width: auto;
+    max-width: 500px;
+    background: white;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 1vh;
+}
+.formulario-productos input {
+    width: auto;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid purple;
+    border-radius: 4px;
+    display: block;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 2vh;
+}
+.formulario-productos input[type=button] {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: lightgreen;
+    border: 1px solid black;
+}
+
+.img-home {
+    width: 120vh;
+    cursor: pointer;
+    border-radius: 1vh;
+    height: auto;
+}
+.li-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    height: 50vh;
+}
+.empty {
+    color: darkslategrey;
+  }
+.tabla-usuarios{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+    background-color: #a419ce;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table td, table th {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+table th {
+    background-color: #7a0ea8;
+    text-transform: uppercase;
+    text-align: left;
+}
+button.eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button.eliminar:hover {
+    background-color: #e60000;
+}
