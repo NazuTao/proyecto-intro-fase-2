@@ -265,6 +265,7 @@ table {
 }
 
 table td, table th {
+    width: 25%;
     padding: 15px;
     text-align: left;
     border: 1px solid #ffffff;
@@ -292,7 +293,7 @@ button.eliminar:hover {
     background-color: #e60000;
 }
 .mensaje-vacio {
-    color: white;
+    color: gray;
     font-size: 30px;
     padding: 10px;
 }

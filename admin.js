@@ -21,17 +21,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const fila = e.target.closest('tr');
             const nombreUsuario = fila.querySelector('td').textContent;
 
-            const usuariosActualizados = usuariosLocalStorage.filter((usuario) => usuario.username !== nombreUsuario);
-            localStorage.setItem('users', JSON.stringify(usuariosActualizados));
+            const confirmacion = confirm(`¿Estas seguro que quieres eliminar al usuario "${nombreUsuario}"?`);
 
-            fila.remove();
+            if (confirmacion) {
+                const usuariosActualizados = usuariosLocalStorage.filter((usuario) => usuario.username !== nombreUsuario);
+                localStorage.setItem('users', JSON.stringify(usuariosActualizados));
 
-            if (tablaUsuarios.querySelectorAll('tr').length === 0) {
-                const mensaje = document.createElement('p');
-                mensaje.textContent = 'No hay usuarios existentes.';
-                mensaje.id = 'mensaje-usuarios';
-                mensaje.classList.add('mensaje-vacio')
-                tablaUsuarios.parentNode.appendChild(mensaje);
+                fila.remove();
+
+                if (tablaUsuarios.querySelectorAll('tr').length === 0) {
+                    const mensaje = document.createElement('p');
+                    mensaje.textContent = 'No hay usuarios existentes.';
+                    mensaje.id = 'mensaje-usuarios';
+                    mensaje.classList.add('mensaje-vacio');
+                    tablaUsuarios.parentNode.parentNode.appendChild(mensaje);
+                }
+            } else {
+                console.log('Eliminación cancelada');
             }
         }
     });
