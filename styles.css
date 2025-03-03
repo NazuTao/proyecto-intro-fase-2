@@ -84,21 +84,22 @@ p1 {
     background-color: transparent;
 }
 .buttonadmin{
+    font-size: 2vh;
     transition: 0.4s;
     color: white;
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(59, 183, 214);
     display: inline-block;
     border-radius: 5px;
-    outline: 3px #181717 solid;
+    outline: 3px #7280bd solid;
     outline-offset: -3px;
     border-radius: 5px;
     border: none;
-    height: 5vh;
-    width: 15vh;
+    height: 10vh;
+    width: 25vh;
 }
 .buttonadmin:hover {
-    background-color: transparent;
+    background-color: darkblue;
 }
 header nav {
     display: flex;
