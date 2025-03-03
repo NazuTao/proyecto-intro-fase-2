@@ -11,7 +11,7 @@
     <header>
         <nav>
             <a href="index.html"><img class="homeicon" src="sources/icon.png"></a>
-            <a href="vendedor_productos.html""><button class="buttonmain">Agregar un producto</button></a>
+            <a href="subir_producto.html""><button class="buttonmain">Agregar un producto</button></a>
             <a href="vendedor.html""><button class="buttonmain">Regresar</button></a>
             
 
@@ -20,35 +20,39 @@
     </header>
         <h1 class="letrasmain"><span>Gestionar productos</span></h1>
         <div class="li-container">
-            <h1>Productos en</h1>
+            <h1>Tus productos</h1>
             <table class="tabla-usuarios">
                 <thead>
                     <tr>
-                        <th>Nombre de usuario</th>
-                        <th>Email</th>
-                        <th>Rol</th>
+                        <th>ID</th>
+                        <th>Producto</th>
+                        <th>Disponibilidad</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>dancabello</td>
-                        <td>dancabello@ucv.com</td>
-                        <td>Vendedor</td>
+                        <td>#1</td>
+                        <td>Teclado</td>
+                        <td>Disponible</td>
                         <td>
                             <button class="eliminar">Eliminar</button>
+                            <button class="ocultar-producto">Ocultar</button>
                         </td>
                     </tr>
                     <tr>
-                        <td>seller456</td>
-                        <td>seller456@ucv.com</td>
-                        <td>Comprador</td>
-                        <td>
-                            <button class="eliminar">Eliminar</button>
-                        </td>
+                        <tr>
+                            <td>#2</td>
+                            <td>Teclado</td>
+                            <td>Disponible</td>
+                            <td>
+                                <button class="eliminar">Eliminar</button>
+                                <button class="ocultar-producto">Ocultar</button>
+                            </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <script src="main.js"></script>
 </body>
 </html>

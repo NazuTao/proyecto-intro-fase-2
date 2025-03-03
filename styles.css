@@ -292,6 +292,20 @@ button.eliminar {
 button.eliminar:hover {
     background-color: #e60000;
 }
+button.ocultar-producto {
+    background-color: #3314e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button.ocultar-producto:hover {
+    background-color: #000000;
+}
 .mensaje-vacio {
     color: gray;
     font-size: 30px;
