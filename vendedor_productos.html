@@ -5,28 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="sources/favicon.ico" />
-    <title>Panel de Vendedor</title>
+    <title>Gestionar productos</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html"><img class="homeicon" src="sources/icon.png"></a>
-            <a href="vendedor.html""><button class="buttonmain">Regresar</button></a>
+            <a href="vendedor_productos.html""><button class="buttonmain">Agregar un producto</button></a>            
+
         </nav>
 
     </header>
-    <div class="formulario-productos">
-            <form class="">
-                <h2>Publicar un producto</h2>
-                <input class="producto" "text" placeholder="Nombre del producto" required>
-                <input class="producto" type="text" placeholder="Precio" required>
-                <input class="producto" type="text" placeholder="Categoria" required>
-                <h2>Subir una imagen</h2>
-                <input class="producto" type="file" placeholder="Subir una foto" required>
-                
-                <input type="button" value="Publicar" onclick="producto()">
-                </form>
-            </div>
-            <script src="main.js"></script>
+        <h1 class="letrasmain"><span>Gestionar productos</span></h1>
+        <div class="li-container">
+            <h1>Productos en venta</h1>
+            <table class="tabla-usuarios">
+                <thead>
+                    <tr>
+                        <th>Nombre de usuario</th>
+                        <th>Email</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>dancabello</td>
+                        <td>dancabello@ucv.com</td>
+                        <td>Vendedor</td>
+                        <td>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>seller456</td>
+                        <td>seller456@ucv.com</td>
+                        <td>Comprador</td>
+                        <td>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </body>
 </html>
