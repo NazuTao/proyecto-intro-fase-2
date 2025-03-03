@@ -107,8 +107,8 @@ header {
     border-radius: 1vh;
     transition: transform 0.2s, background-color 0.2s;
     justify-content: flex-start;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     cursor: pointer;
 }
 .homeicon:hover{
