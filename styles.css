@@ -156,11 +156,6 @@ header {
     box-shadow: 2px 2px black;
     transition: all 0.5s ease-in-out;
 }
-
-.hover-container:hover .hover-image {
-    transform: rotateY(360deg);
-}
-
 .hover-container:hover .hover-text {
     left: 80px;
     opacity: 1;

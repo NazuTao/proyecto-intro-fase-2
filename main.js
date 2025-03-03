@@ -37,9 +37,17 @@ document.querySelectorAll(".ocultar-producto").forEach(button => {
 });
 
 function publicarProducto() {
-    const nombreproducto = document.querySelector('input[placeholder="Nombre del producto"]').value.trim();
-    const precioproducto = document.querySelector('input[placeholder="Precio"]').value.trim();
-    const categoriaproducto = document.querySelector('input[placeholder="Categoria"]').value.trim();
+    const nombreProducto = document.getElementById('nombre-producto').value.trim();
+    const precioProducto = document.getElementById('precio-producto').value.trim();
+    const categoriaProducto = document.getElementById('categoria-producto').value.trim();
+    const imagenProducto = document.getElementById('img-producto').files.length > 0;
+
+    if (nombreProducto && precioProducto && categoriaProducto && imagenProducto) {
+        alert('Producto publicado.');
+        window.location.href = "gestionar_productos_vendedor.html";
+    } else {
+        alert('Rellene todos los campos antes de publicar.');
+    }
 }
 
 const productos = [

@@ -23,13 +23,13 @@
     <div class="formulario-productos">
         <form>
             <h2>Publicar un producto</h2>
-            <input type="text" placeholder="Nombre del producto" required>
-            <input type="text" placeholder="Precio" required>
-            <input type="text" placeholder="Categoria" required>
+            <input type="text" id="nombre-producto" placeholder="Nombre del producto" required>
+            <input type="text" id="precio-producto" placeholder="Precio" required>
+            <input type="text" id="categoria-producto" placeholder="Categoria" required>
             <h2>Subir una imagen</h2>
-            <input type="file" placeholder="Subir una foto" required>
+            <input type="file" id="img-producto" placeholder="Subir una foto" required>
             
-            <input type="button" value="Publicar" onclick="producto()">
+            <input type="button" value="Publicar" onclick="publicarProducto()">
             </form>
         </div>
         <script src="main.js"></script>
