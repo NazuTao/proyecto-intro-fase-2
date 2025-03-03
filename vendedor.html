@@ -16,14 +16,28 @@
                     <span class="hover-text">Inicio</span>
                 </div>
             </a>
-            <a href="gestionar_productos_vendedor.html""><button class="buttonmain">Gestionar Productos</button></a>
             <button id="logout" class="buttonmain">Cerrar Sesión</button>
         </nav>
 
     </header>
-    <div>
-        <h1 class="letrasmain">Bienvenido a ByteShop</h1>
-        <p1>Estás utilizando una cuenta de vendedor.</p1>
+    <div class="container-vendedor">
+        <h1>Bienvenido a ByteShop</h1>
+        <p>Estás utilizando una cuenta de vendedor. Aquí puedes gestionar tus productos y realizar publicaciones.</p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="sources/icon.png">
+                <h3>Gestionar Productos</h3>
+                <p>Administra tus productos en venta.</p>
+                <a href="gestionar_productos_vendedor.html""><button class="button-card">Ver tus Productos</button></a>
+            </div>
+            <div class="card">
+                <img src="sources/icon.png">
+                <h3>Publicar un Producto</h3>
+                <p>Sube nuevos productos para expandir tu catálogo.</p>
+                <a href="subir_producto.html"><button class="button-card">Publicar</button></a>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
