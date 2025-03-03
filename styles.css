@@ -6,6 +6,8 @@
     text-decoration: none;
 }
 body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
     background-image: url(sources/background.jpg);
     background-repeat: no-repeat;
     background-size: 300vh;
@@ -13,6 +15,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 3vh;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .letrasmain {
     font-family: sans-serif;
@@ -103,16 +113,41 @@ header {
     border-radius: 1vh;
     box-shadow: black 2px 2px 2px;
 }
-.homeicon {
-    border-radius: 1vh;
-    transition: transform 0.2s, background-color 0.2s;
-    justify-content: flex-start;
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-image {
     width: 75px;
     height: 75px;
-    cursor: pointer;
+    border-radius: 1vh;
+    transition: transform 0.5s ease-in-out;
 }
-.homeicon:hover{
-    transform: scale(1.1);
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    opacity: 0;
+    white-space: nowrap;
+    background: rgb(141, 25, 122);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-container:hover .hover-image {
+    transform: rotateY(360deg);
+}
+
+.hover-container:hover .hover-text {
+    left: 80px;
+    opacity: 1;
 }
 .formulario-login{
     width: auto;
