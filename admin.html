@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="sources/favicon.ico" />
-    <title>Panel de admin</title>
+    <title>Panel de Admin</title>
 </head>
 <body>
     <header>
@@ -20,10 +20,24 @@
         </nav>
 
     </header>
-    <div>
-        <h1 class="letrasmain"><span>Bienvenido usuario Root</span></h1>
-        <a href="eliminar_usuarios.html"><button class="buttonadmin">Eliminar un usuario</button></a>
-        <a href="eliminar_productos.html"><button class="buttonadmin">Eliminar un producto</button></a>
+    <div class="container-vendedor">
+        <h1>Bienvenido usuario Root</h1>
+        <p>¿Qué opción deseas utilizar?</p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="sources/icon.png">
+                <h3>Gestionar Usuarios</h3>
+                <p>Lista de usuarios registrados en el sistema.</p>
+                <a href="eliminar_usuarios.html""><button class="button-card">Ver usuarios</button></a>
+            </div>
+            <div class="card">
+                <img src="sources/icon.png">
+                <h3>Gestionar productos</h3>
+                <p>Gestionar productos que otros usuarios han subido.</p>
+                <a href="eliminar_productos.html"><button class="button-card">Ver productos</button></a>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
