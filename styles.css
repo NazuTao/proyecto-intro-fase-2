@@ -282,7 +282,6 @@ header {
 
 .img-home {
     width: 120vh;
-    cursor: pointer;
     border-radius: 1vh;
     height: auto;
     animation: bounce 2s infinite ease-in-out;
@@ -544,4 +543,14 @@ padding: 10px 15px;
     border-radius: 10px;
     padding: 30px;
     height: auto;
+}
+.contenedor-carrito {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.carrito-img {
+    width: 50px;
+    height: auto;
+    align-items: right;
 }
