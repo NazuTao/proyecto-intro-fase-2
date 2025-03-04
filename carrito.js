@@ -39,9 +39,9 @@
      if (productos.length === 0) {
          alert("No hay productos en la lista para confirmar la compra.");
          return;
-     }
-
-     alert("¡Compra exitosa!");
+     } else{
+        window.location.href = 'formulario-compra.html';
+    }
 
      localStorage.removeItem('productos');
      productos = []; 
