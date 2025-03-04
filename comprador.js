@@ -64,6 +64,3 @@ function agregarVarios(producto) {
 }
 
 actualizarContador();
-
-function confirmarCompra() {
-    alert("¡Compra exitosa!");}

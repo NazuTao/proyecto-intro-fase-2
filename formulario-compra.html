@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="sources/favicon.ico" />
+    <title>Confirmar Pago</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="home-link">
+                <div class="hover-container">
+                    <img class="hover-image" src="sources/icon.png" alt="Home">
+                    <span class="hover-text">Inicio</span>
+                </div>
+            </a>
+            <a href="comprador.html"><button class="buttonmain">Catálogo</button></a>
+        </nav>
+    </header>
+    <div class="container-reg">
+        <form class="formulario-registro" id="form-reg">
+            <h1>Datos bancarios</h1>
+            <input type="text" placeholder="Número de tarjeta" id="numeroTarjeta">
+            <input type="text" placeholder="Titular de la tarjeta" id="titularTarjeta">
+            <input type="text" placeholder="CVV de la tarjeta" id="cvvTarjeta">
+            <input type="text" placeholder="Fecha de vencimiento" id="fechaVencimiento">
+            <input type="submit" value="Comprar">
+        </form>
+    </div>
+    <script src="pago.js"></script>
+</body>
+</html>
