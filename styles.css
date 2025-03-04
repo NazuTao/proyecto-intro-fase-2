@@ -1,5 +1,5 @@
 * {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
     }
 }
 .letrasmain {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-shadow: 4px;
 }
@@ -173,7 +173,7 @@ header {
     margin-top: 20vh;
     border-radius: 1vh;
 }
-.formulario-login input {
+.formulario-login input[type=text] {
     width: auto;
     padding: 1vh;
     margin: auto;
@@ -181,6 +181,54 @@ header {
     border-radius: 1vh;
     border: 1px solid purple;    
     display: block;
+}
+.formulario-login input[type=password] {
+    width: auto;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    border: 1px solid purple;    
+    display: block;
+}
+.login-button {
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid #560bad;
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #560bad;
+  }
+  
+.login-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #560bad;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+  
+  .login-button:hover {
+    color: #fff;
+}
+  
+  .login-button:hover:before {
+    top: -30px;
+    left: -30px;
 }
 .formulario-registro {
     width: 90%;
@@ -198,26 +246,8 @@ header {
     border: 1px solid purple;
     border-radius: 4px;
 }
-.formulario-registro button {
-    width: 100px;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    background: lightgreen;
-}
-.formulario-login input[type=submit] {
-    width: 100px;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    background: lightgreen;
-    border: 1px solid black;
-    
-}
+
+
 .formulario-registro input[type=button] {
     width: 100px;
     padding: 12px;
@@ -328,7 +358,7 @@ table td, table th {
     text-align: left;
     border: 1px solid #ffffff;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table th {

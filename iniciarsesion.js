@@ -1,7 +1,6 @@
-const formulariologin = document.querySelector('#form-login');
-formulariologin.addEventListener('submit', (e) => {
-    e.preventDefault();
+const loginButton = document.querySelector('#login-button');
 
+loginButton.addEventListener('click', () => {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 

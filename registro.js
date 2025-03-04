@@ -1,10 +1,16 @@
-const formularioregistro = document.querySelector('#form-reg');
-formularioregistro.addEventListener('submit', (e) => {
+const registerButton = document.querySelector('#register-button');
+
+registerButton.addEventListener('click', (e) => {
     e.preventDefault();
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    const email = document.getElementById("email").value;
-    const role = document.getElementById("role").value;
+
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const role = document.getElementById("role").value.trim();
+
+    if (!username || !password || !email || !role) {
+        return alert('Por favor, rellena todos los campos obligatorios.');
+    }
 
     if (role !== "Vendedor" && role !== "Comprador") {
         return alert('El rol debe ser "Vendedor" o "Comprador".');
@@ -12,6 +18,7 @@ formularioregistro.addEventListener('submit', (e) => {
 
     const Users = JSON.parse(localStorage.getItem('users')) || [];
     const userRegistered = Users.find(user => user.email === email) || Users.find(user => user.username === username);
+
     if (userRegistered) {
         return alert('Correo o nombre de usuario en uso');
     }
