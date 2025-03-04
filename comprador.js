@@ -66,4 +66,7 @@ function agregarVarios(producto) {
 actualizarContador();
 
 function confirmarCompra() {
-    alert("¡Compra exitosa!");}
+    alert("Compra exitosa.");}
+
+    function formularioComprar() {
+        window.location.href = "formulario-compra.html" ;}
