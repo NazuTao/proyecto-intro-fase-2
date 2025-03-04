@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const logoutButton = document.getElementById('logout'); 
+    logoutButton.addEventListener('click', () => {
+        const confirmacion = confirm('¿Estás seguro de que deseas cerrar sesión?');
+
+        if (confirmacion) {
+            window.location.href = 'login.html';
+        } else {
+            console.log('Logout cancelado');
+        }
+    });
+})
 function actualizarContador() {
     const productos = JSON.parse(localStorage.getItem('productos')) || [];
     const contador = document.getElementById('contadorProductos');
