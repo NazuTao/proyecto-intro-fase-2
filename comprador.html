@@ -16,7 +16,7 @@
                     <span class="hover-text">Inicio</span>
                 </div>
             </a>
-            <a class="boton-carrito" href="carrito.html"><button class="buttonmain">Carrito <span class="numerito">0</span></button></a>
+            <a class="boton-carrito" href="carrito.html"><button class="buttonmain">Carrito <span class="contador" id="contadorProductos">0</span></button></a>
             <button id="logout" class="buttonmain">Cerrar Sesión</button>
         </nav>
 
@@ -25,14 +25,46 @@
     <h2 class="texto-principal">Todos los productos</h2>
     <div class="contenedor-productos">
         <div class="producto">
-  A
+            <img class="producto-imagen" src="sources/lista-productos/01.JPG" alt="">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">Samsung S10</h3>
+                <p class="producto-precio">170$</p>
+                <p class="producto-categoria">Dispositivos</p>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 1, nombre: 'Samsung S10', precio: 170, imagen: 'sources/lista-productos/01.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 1, nombre: 'Samsung S10', precio: 170, imagen: 'sources/lista-productos/01.JPG' })">Agregar varios</button>               
+                <button class="producto-comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img class="producto-imagen" src="sources/lista-productos/02.JPG" alt="">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">Redmi Note 11</h3>
+                <p class="producto-precio">190$</p>
+                <p class="producto-categoria">Dispositivos</p>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 2, nombre: 'Redmi Note 11', precio: 190, imagen: 'sources/lista-productos/02.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 2, nombre: 'Redmi Note 11', precio: 190, imagen: 'sources/lista-productos/02.JPG' })">Agregar varios</button>
+                <button class="producto-comprar" onclick="confirmarCompra()">Comprar</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img class="producto-imagen" src="sources/lista-productos/03.JPG" alt="">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">Samsung Galaxy Tab A7</h3>
+                <p class="producto-precio">210$</p>
+                <p class="producto-categoria">Dispositivos</p>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 3, nombre: 'Sansum Galaxy Tab A7', precio: 210, imagen: 'sources/lista-productos/03.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 3, nombre: 'Sansum Galaxy Tab A7', precio: 210, imagen: 'sources/lista-productos/03.JPG' })">Agregar varios</button>               
+                <button class="producto-comprar">Comprar</button>
+            </div>
+        </div>
         <div class="producto">
             <img class="producto-imagen" src="sources/lista-productos/04.JPG" alt="">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">Audifonos Gamer Onikuna K8</h3>
                 <p class="producto-precio">58$</p>
                 <p class="producto-categoria">Dispositivos</p>
-                <button class="producto-agregar">Agregar</button>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 4, nombre: 'Audifonos Gamer Onikuna K8', precio: 58, imagen: 'sources/lista-productos/04.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 4, nombre: 'Audifonos Gamer Onikuna K8', precio: 58, imagen: 'sources/lista-productos/04.JPG' })">Agregar varios</button>
                 <button class="producto-comprar">Comprar</button>
             </div>
         </div>
@@ -42,7 +74,8 @@
                 <h3 class="producto-titulo">Licuadora Oster</h3>
                 <p class="producto-precio">55$</p>
                 <p class="producto-categoria">Domésticos</p>
-                <button class="producto-agregar">Agregar</button>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 5, nombre: 'Licuadora Oster', precio: 55, imagen: 'sources/lista-productos/05.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 5, nombre: 'Licuadora Oster', precio: 55, imagen: 'sources/lista-productos/05.JPG' })">Agregar varios</button>
                 <button class="producto-comprar">Comprar</button>
             </div>
         </div>
@@ -52,7 +85,8 @@
                 <h3 class="producto-titulo">Aspiradora MAX</h3>
                 <p class="producto-precio">80$</p>
                 <p class="producto-categoria">Domésticos</p>
-                <button class="producto-agregar">Agregar</button>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 6, nombre: 'Aspiradora MAX', precio: 80, imagen: 'sources/lista-productos/06.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 6, nombre: 'Aspiradora MAX', precio: 80, imagen: 'sources/lista-productos/06.JPG' })">Agregar varios</button>
                 <button class="producto-comprar">Comprar</button>
             </div>
         </div>
@@ -62,7 +96,8 @@
                 <h3 class="producto-titulo">Lavadora CleanNation</h3>
                 <p class="producto-precio">110$</p>
                 <p class="producto-categoria">Domésticos</p>
-                <button class="producto-agregar">Agregar</button>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 7, nombre: 'Lavadora CleanNation', precio: 110, imagen: 'sources/lista-productos/07.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 7, nombre: 'Lavadora CleanNation', precio: 110, imagen: 'sources/lista-productos/07.JPG' })">Agregar varios</button>              
                 <button class="producto-comprar">Comprar</button>
             </div>
         </div>
@@ -72,7 +107,8 @@
                 <h3 class="producto-titulo">Nevera Whirpool</h3>
                 <p class="producto-precio">150$</p>
                 <p class="producto-categoria">Domésticos</p>
-                <button class="producto-agregar">Agregar</button>
+                <button class="producto-agregar" onclick="agregarProducto({ id: 8, nombre: 'Nevera Whirpool', precio: 150, imagen: 'sources/lista-productos/08.JPG' })">Agregar</button>
+                <button class="producto-agregar" onclick="agregarVarios({ id: 8, nombre: 'Nevera Whirpool', precio: 150, imagen: 'sources/lista-productos/08.JPG' })">Agregar varios</button>
                 <button class="producto-comprar">Comprar</button>
          </div>
         </div>
@@ -82,7 +118,8 @@
             <h3 class="producto-titulo">Bicicleta BMX</h3>
             <p class="producto-precio">150$</p>
             <p class="producto-categoria">Vehículos</p>
-            <button class="producto-agregar">Agregar</button>
+            <button class="producto-agregar" onclick="agregarProducto({ id: 9, nombre: 'Bicicleta BMX', precio: 150, imagen: 'sources/lista-productos/09.JPG' })">Agregar</button>
+            <button class="producto-agregar" onclick="agregarVarios({ id: 9, nombre: 'Bicicleta BMX', precio: 150, imagen: 'sources/lista-productos/09.JPG' })">Agregar varios</button>
             <button class="producto-comprar">Comprar</button>
          </div>
         </div>
@@ -93,11 +130,11 @@
             <h3 class="producto-titulo">Patineta FitNation</h3>
             <p class="producto-precio">120$</p>
             <p class="producto-categoria">Vehículos</p>
-            <button class="producto-agregar">Agregar</button>
+            <button class="producto-agregar" onclick="agregarProducto({ id: 10, nombre: 'Patineta fitNation', precio: 120, imagen: 'sources/lista-productos/10.JPG' })">Agregar</button>
+            <button class="producto-agregar" onclick="agregarVarios({ id: 10, nombre: 'Patineta fitNation', precio: 120, imagen: 'sources/lista-productos/10.JPG' })">Agregar varios</button>
             <button class="producto-comprar">Comprar</button>
          </div>
     </div>
-
-    <script src="main.js"></script>
+    <script src="comprador.js"></script>
 </body>
 </html>
