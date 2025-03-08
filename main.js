@@ -13,10 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelectorAll(".eliminar").forEach(button => {
     button.addEventListener("click", (e) => {
-        const confirmacion = confirm("¿Estas seguro de que quieres eliminar este producto?");
+        const confirmacion = confirm("¿Estás seguro de que quieres eliminar este producto?");
         if (confirmacion) {
             const row = e.target.closest("tr");
             row.remove();
+            verificarProductos();
         }
     });
 });
@@ -32,10 +33,24 @@ document.querySelectorAll(".ocultar-producto").forEach(button => {
         } else if (button.textContent === "Mostrar") {
             disponibilidadCell.textContent = "Disponible";
             button.textContent = "Ocultar";
-        }        
+        }
     });
 });
 
+function verificarProductos() {
+    const filas = document.querySelectorAll('tr');
+    const tabla = document.querySelector('table');
+
+    const productosActivos = Array.from(filas).filter(row => row.querySelector('td'));
+
+    if (productosActivos.length === 0) {
+        const mensaje = document.createElement('p');
+        mensaje.textContent = 'Ya no hay productos activos.';
+        mensaje.id = 'mensaje-usuarios';
+        mensaje.classList.add('mensaje-vacio');
+        tabla.parentNode.appendChild(mensaje);
+    }
+}
 function publicarProducto() {
     const nombreProducto = document.getElementById('nombre-producto').value.trim();
     const precioProducto = document.getElementById('precio-producto').value.trim();
